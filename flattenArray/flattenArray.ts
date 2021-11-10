@@ -1,37 +1,35 @@
-export function flattenArray(arr: any[]): any[] {
-  const oneArray = [];
+export function flattenArray(array: any[]): any[] {
+  const newArray = [];
 
-  const flatten = (arr) => {
-    arr.forEach((element) => {
+  function flatten(array) {
+    array.forEach((element) => {
       if (Array.isArray(element)) {
         flatten(element);
       } else {
-        oneArray.push(element);
+        newArray.push(element);
       }
     });
-  };
-
-  flatten(arr);
-  return oneArray;
+  }
+  flatten(array);
 }
+
 
 console.log(flattenArray([[["a"]], [["b"]]]));
 console.log(flattenArray([1, [2], [3, [[4]]]]));
 
 // export function flattenArray(arr: any[]): any[] {
-//   const oneArray = [];
+// const oneArray = [];
 
-//   flattenArray(arr);
+// const flatten = (arr) => {
+//   arr.forEach((element) => {
+//     if (Array.isArray(element)) {
+//       flatten(element);
+//     } else {
+//       oneArray.push(element);
+//     }
+//   });
+// };
 
-//   function flattenArray(arr) {
-//     arr.forEach(element => {
-//       if (Array.isArray(element)) {
-//         flattenArray(element);
-//       } else {
-//         oneArray.push(element);
-//       }
-//     });
-//   }
-
-//   return oneArray;
+// flatten(arr);
+// return oneArray;
 // }
