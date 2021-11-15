@@ -3,7 +3,7 @@ export function incrementalBackups(
   changes: number[][]
 ): number[] {
   const newArray = [];
-  
+
   for (let index = 0; index < changes.length; index++) {
     changes[index] = changes[index].sort((a, b) => b - a);
     const [row1, row2] = changes[index];
