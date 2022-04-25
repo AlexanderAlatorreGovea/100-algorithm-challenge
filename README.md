@@ -1,5 +1,4 @@
 <div>
-    The following algorithims that I need to learn from:
     1. Compose Ranges algorithms (composeRanges)
     2. convertString, it gives an interesting way of checking 
     words
