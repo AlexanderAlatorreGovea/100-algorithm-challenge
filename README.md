@@ -1,7 +1,6 @@
 <div>
     1. Compose Ranges algorithms (composeRanges)
-    2. convertString, it gives an interesting way of checking 
-    words
+    2. convertString
     3. findClosestPair
     4. fermactor
     5. firstDuplicate
