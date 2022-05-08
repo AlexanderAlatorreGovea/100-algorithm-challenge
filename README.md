@@ -4,5 +4,4 @@
     3. findClosestPair
     4. fermactor
     5. firstDuplicate
-    6. flattenArray
 </div>
